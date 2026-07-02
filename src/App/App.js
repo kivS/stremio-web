@@ -12,6 +12,7 @@ const ServicesToaster = require('./ServicesToaster');
 const SearchParamsHandler = require('./SearchParamsHandler');
 const DeepLinkHandler = require('./DeepLinkHandler');
 const { default: UpdaterBanner } = require('./UpdaterBanner');
+const { default: WebUpdateScreen } = require('./WebUpdateScreen');
 const { default: ShortcutsModal } = require('./ShortcutsModal');
 const { default: GamepadModal } = require('./GamepadModal');
 const styles = require('./styles');
@@ -198,6 +199,7 @@ const App = () => {
                                     <SearchParamsHandler />
                                     <DeepLinkHandler />
                                     <UpdaterBanner className={styles['updater-banner-container']} />
+                                    <WebUpdateScreen />
                                     <ProtectedRoutes />
                                 </DiscordProvider>
                             </FullscreenProvider>
